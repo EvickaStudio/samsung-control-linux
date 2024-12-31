@@ -30,6 +30,8 @@ You can find some good information about using a Samsung Galaxy Book with Linux 
 | [Quiet](https://browser.geekbench.com/v6/cpu/9702538) | 1215 | 4588 | Silent operation, ~50% performance |
 | [Low-power](https://browser.geekbench.com/v6/cpu/9702639) | 1204 | 4607 | Power-efficient, similar to quiet mode |
 
+[Performance/ Balanced vs. Quiet/ Low-power](https://browser.geekbench.com/v6/cpu/compare/9702538?baseline=9702316)
+
 > Interesting findings:
 >
 > - Balanced mode achieves similar performance to Performance mode
