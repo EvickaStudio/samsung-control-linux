@@ -5,6 +5,17 @@
 
 A system settings application for Samsung Galaxy Book laptops running Linux, providing similar functionality to Samsung Settings on Windows. The application offers a modern GTK4 interface to control various laptop features and hardware settings (currently only tested on Arch-based distributions).
 
+## Important Note About Dependencies
+
+This application relies on the [samsung-galaxybook-extras](https://github.com/joshuagrisham/samsung-galaxybook-extras) kernel module, which is currently in development (WIP). The kernel module replicates functionality that Samsung provides in Windows through their System Event Controller and System Support Engine, including:
+
+- ACPI driver interaction with Samsung's SCAI ACPI device
+- Hardware control features (keyboard backlight, battery threshold, etc.)
+- Performance mode management
+- System event handling
+
+While the kernel module is nearing readiness for mainline inclusion, please note that it's still considered a work in progress. Use the features at your own discretion.
+
 ## Features
 
 ![Screenshot](assets/screenshot-2.png)
