@@ -1,28 +1,28 @@
-# Samsung Galaxy Book Linux Control
+# Samsung Galaxy Book Control for Linux
 
 > [!IMPORTANT]
-> This is a work in progress like the 'samsung-galaxybook-extras' module. And i only tested it on EndeavourOS with my Samsung Galaxy Book 2 Pro 360 15
+> This application is currently in development and has been tested on EndeavourOS with a Samsung Galaxy Book 2 Pro 360 15.
 
-A collection of scripts and tools to make Samsung Galaxy Book laptops work better with Linux (currently only Arch Linux is supported/ was tested on).
+A system settings application for Samsung Galaxy Book laptops running Linux, providing similar functionality to Samsung Settings on Windows. The application offers a modern GTK4 interface to control various laptop features and hardware settings (currently only tested on Arch-based distributions).
 
-You can find some good information about using a Samsung Galaxy Book with Linux here:
+## Features
 
-- [samsung-galaxybook-extras](https://github.com/joshuagrisham/samsung-galaxybook-extras)
-- [galaxy-book2-pro-linux](https://github.com/joshuagrisham/galaxy-book2-pro-linux) (for making the speakers work)
-
-## User Interface
-
-<!-- ![Screenshot](assets/screenshot-1.png) -->
 ![Screenshot](assets/screenshot-2.png)
 
-## System Specifications
+- Modern GTK4/libadwaita interface
+- Real-time system monitoring
+  - Fan speed with RPM history graph
+  - CPU usage tracking
+  - Battery status and charging
+- Hardware Controls
+  - Keyboard backlight brightness
+  - Battery charge threshold
+  - USB charging when laptop is off
+  - Lid open power control
+  - Camera/microphone access
+  - Performance mode selection
 
-- CPU: Intel Core i7-1260P (12 Cores, 16 Threads)
-- Memory: 16 GB
-- Model: Samsung Galaxy Book 2 Pro 360 (950QED)
-- OS: EndeavourOS (Linux 6.12.6-arch1-1)
-
-## Performance Analysis (Geekbench 6)
+## Performance Profiles Analysis (Geekbench 6)
 
 | Mode | Single-Core | Multi-Core | Notes |
 |------|-------------|------------|--------|
@@ -33,21 +33,21 @@ You can find some good information about using a Samsung Galaxy Book with Linux 
 
 [Performance/ Balanced vs. Quiet/ Low-power](https://browser.geekbench.com/v6/cpu/compare/9702538?baseline=9702316)
 
-> Interesting findings:
+> Performance Analysis:
 >
 > - Balanced mode achieves similar performance to Performance mode
 > - Quiet and Low-power modes trade ~50% performance for better thermals/battery
 > - Perfect for switching between max performance and silent operation
 
-## Prerequisites
+## System Requirements
 
-- Linux kernel 6.0+
-- Python 3.x with GTK 4
-- Samsung Galaxy Book kernel module (install first using `install-extras.sh`)
+- Linux kernel 6.0 or newer
+- Python 3.x with GTK 4 and libadwaita
+- Samsung Galaxy Book kernel module (installed via the provided installer)
 
 ## Installation
 
-### Clone the Repository
+### 1. Clone the Repository
 
 ```bash
 # Clone with submodules
@@ -58,27 +58,29 @@ cd samsung-control-linux
 git submodule update --init
 ```
 
-### Install Components
+### 2. Install Components
 
-1. Install kernel module:
+First, install the kernel module:
 
 ```bash
 sudo ./install-extras.sh
 ```
 
-2. Install control application:
+Then, install the Samsung Settings application:
 
 ```bash
 cd samsung-control
 sudo ./install.sh
 ```
 
-## Working Features
+After installation, you'll find "Samsung Galaxy Book Control" in your applications menu.
 
-- Keyboard backlight control
-- Charge control (limit battery charge)
-- Fan speed reporting
-- Performance mode control (with significant impact as shown above)
+## Additional Resources
+
+For more information about Samsung Galaxy Book Linux compatibility:
+
+- [samsung-galaxybook-extras](https://github.com/joshuagrisham/samsung-galaxybook-extras)
+- [galaxy-book2-pro-linux](https://github.com/joshuagrisham/galaxy-book2-pro-linux) (audio support)
 
 ## License
 
