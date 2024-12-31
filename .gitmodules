@@ -1,0 +1,3 @@
+[submodule "modules/samsung-galaxybook-extras"]
+	path = modules/samsung-galaxybook-extras
+	url = https://github.com/joshuagrisham/samsung-galaxybook-extras.git
