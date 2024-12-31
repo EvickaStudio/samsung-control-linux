@@ -66,6 +66,8 @@ First, install the kernel module:
 sudo ./install-extras.sh
 ```
 
+#### Or follow the instructions from the [samsung-galaxybook-extras](https://github.com/joshuagrisham/samsung-galaxybook-extras) repository
+
 Then, install the Samsung Settings application:
 
 ```bash
