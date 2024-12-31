@@ -40,7 +40,18 @@ You can find some good information about using a Samsung Galaxy Book with Linux 
 
 ## Installation
 
-The 'install-extras.sh' script will automatically load the git submodule and build the kernel module.
+### Clone the Repository
+
+```bash
+# Clone with submodules
+git clone https://github.com/EvickaStudio/samsung-control-linux.git
+cd samsung-control-linux
+
+# If you already cloned without --recursive, run:
+git submodule update --init
+```
+
+### Install Components
 
 1. Install kernel module:
 
