@@ -1,9 +1,9 @@
-# Samsung Galaxy Book Linux Control (Arch Linux)
+# Samsung Galaxy Book Linux Control
 
 > [!IMPORTANT]
 > This is a work in progress like the 'samsung-galaxybook-extras' module. And i only tested it on EndeavourOS with my Samsung Galaxy Book 2 Pro 360 15
 
-A collection of scripts and tools to make Samsung Galaxy Book laptops work better with Linux (currently only Arch Linux is supported).
+A collection of scripts and tools to make Samsung Galaxy Book laptops work better with Linux (currently only Arch Linux is supported/ was tested on).
 
 You can find some good information about using a Samsung Galaxy Book with Linux here:
 
