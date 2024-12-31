@@ -22,16 +22,16 @@ While the kernel module is nearing readiness for mainline inclusion, please note
 
 - Modern GTK4/libadwaita interface
 - Real-time system monitoring
-  - Fan speed with RPM history graph
-  - CPU usage tracking
-  - Battery status and charging
+  - [x] Fan speed with RPM history graph
+  - [x] CPU usage tracking (not dependent on kernel module)
+  - [x] Battery status and charging (not dependent on kernel module)
 - Hardware Controls
-  - Keyboard backlight brightness
-  - Battery charge threshold
-  - USB charging when laptop is off
-  - Lid open power control
-  - Camera/microphone access
-  - Performance mode selection
+  - [x] Keyboard backlight brightness
+  - [x] Battery charge threshold
+  - [ ] USB charging when laptop is off
+  - [x] Lid open power control
+  - [ ] Camera/microphone access
+  - [x] Performance mode selection
 
 ## Performance Profiles Analysis (Geekbench 6)
 

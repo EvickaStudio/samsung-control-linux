@@ -57,8 +57,21 @@ chmod +x /usr/local/bin/samsung-control-wrapper
 # Copy program
 install -Dm755 samsung-control.py /usr/local/bin/samsung-control
 
-# Copy desktop entry
-install -Dm644 org.samsung.control.desktop /usr/share/applications/org.samsung.control.desktop
+# Install icons
+install -Dm644 icons/samsung-control.svg /usr/share/icons/hicolor/scalable/apps/samsung-control.svg
+
+# Copy desktop entry with updated icon name
+cat > /usr/share/applications/org.samsung.control.desktop << EOL
+[Desktop Entry]
+Name=Samsung Galaxy Book Control
+Comment=Control Samsung Galaxy Book features
+Exec=samsung-control-wrapper
+Icon=samsung-control
+Terminal=false
+Type=Application
+Categories=Settings;HardwareSettings;
+Keywords=samsung;galaxybook;laptop;control;
+EOL
 
 # Create polkit policy
 cat > /usr/share/polkit-1/actions/org.samsung.control.policy << EOL
@@ -102,6 +115,9 @@ EOL
 # Reload udev rules
 udevadm control --reload-rules
 udevadm trigger
+
+# Update icon cache
+gtk-update-icon-cache -f /usr/share/icons/hicolor
 
 echo "Installation complete!"
 echo "You may need to log out and back in for the application to appear in your menu." 
