@@ -75,6 +75,7 @@ sudo ./install.sh
 ## Working Features
 
 - Keyboard backlight control
+- Charge control (limit battery charge)
 - Fan speed reporting
 - Performance mode control (with significant impact as shown above)
 

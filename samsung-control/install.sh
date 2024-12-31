@@ -34,13 +34,7 @@ EOL
 udevadm control --reload-rules
 udevadm trigger
 
-# Create device files if they don't exist
-mkdir -p /dev/samsung-galaxybook
-touch /dev/samsung-galaxybook/charge_control_end_threshold
-touch /dev/samsung-galaxybook/usb_charge
-touch /dev/samsung-galaxybook/start_on_lid_open
-touch /dev/samsung-galaxybook/allow_recording
-chmod 666 /dev/samsung-galaxybook/*
+
 
 echo "Installation complete!"
 echo "You may need to log out and back in for the application to appear in your menu." 
