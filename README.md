@@ -10,9 +10,10 @@ You can find some good information about using a Samsung Galaxy Book with Linux 
 - [samsung-galaxybook-extras](https://github.com/joshuagrisham/samsung-galaxybook-extras)
 - [galaxy-book2-pro-linux](https://github.com/joshuagrisham/galaxy-book2-pro-linux) (for making the speakers work)
 
-## Screenshots
+## User Interface
 
-![Screenshot](assets/screenshot-1.png)
+<!-- ![Screenshot](assets/screenshot-1.png) -->
+![Screenshot](assets/screenshot-2.png)
 
 ## System Specifications
 
