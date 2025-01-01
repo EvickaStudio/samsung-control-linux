@@ -30,7 +30,7 @@ While the kernel module is nearing readiness for mainline inclusion, please note
   - [x] Battery charge threshold
   - [ ] USB charging when laptop is off
   - [x] Lid open power control
-  - [ ] Camera/microphone access
+  - [x] Camera/microphone access (Blocks/Allows usage)
   - [x] Performance mode selection
 
 ## Performance Profiles Analysis (Geekbench 6)
